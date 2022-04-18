@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31112.23
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuristickaAgencijaAPI", "TuristickaAgencijaAPI\TuristickaAgencijaAPI.csproj", "{0C3E2494-F9EB-4370-956F-46EB164DE360}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TuristickaAgencijaAPI", "TuristickaAgencijaAPI\TuristickaAgencijaAPI.csproj", "{0C3E2494-F9EB-4370-956F-46EB164DE360}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{DB8C9215-23F2-4754-B6DD-80F633142DC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{DB8C9215-23F2-4754-B6DD-80F633142DC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{6675DC6E-ED85-4213-BE7B-73B96600D5AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{6675DC6E-ED85-4213-BE7B-73B96600D5AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2D28B674-4325-4865-8117-538CF511238E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Model.Domain;
-using System;
 
 namespace Model
 {
@@ -15,7 +14,6 @@ namespace Model
         public DbSet<TipSobe> TipoviSobe { get; set; }
         public DbSet<ZahtevKorisnika> ZahteviKorisnika { get; set; }
         public DbSet<ZahtevZaRezervisanjeHotela> ZahteviZaRez { get; set; }
-
         public DbSet<Destinacija> Destinacije { get; set; }
         public DbSet<Smestaj> Smestaji { get; set; }
         public DbSet<Potvrda> Potvrde{ get; set; }

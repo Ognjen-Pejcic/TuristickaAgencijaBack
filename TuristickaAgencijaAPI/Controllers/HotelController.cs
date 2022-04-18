@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Data.UnitOfWork;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Model.Domain;
 using System;
@@ -12,6 +13,7 @@ using System.Threading.Tasks;
 namespace TuristickaAgencijaAPI.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class HotelController : ControllerBase
     {

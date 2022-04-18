@@ -1,4 +1,5 @@
 ﻿using Data.UnitOfWork;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Model.Domain;
 using System;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace TuristickaAgencijaAPI.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class TipSobeController : ControllerBase

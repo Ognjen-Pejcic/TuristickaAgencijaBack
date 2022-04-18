@@ -5575,11 +5575,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pejci\\source\\repos\\TuristickaAgencijaAPI\\Model\\Model.csproj",
+      "projectUniqueName": "C:\\Users\\pejci\\Desktop\\frpis\\TuristickaAgencijaBack\\Model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "C:\\Users\\pejci\\source\\repos\\TuristickaAgencijaAPI\\Model\\Model.csproj",
+      "projectPath": "C:\\Users\\pejci\\Desktop\\frpis\\TuristickaAgencijaBack\\Model\\Model.csproj",
       "packagesPath": "C:\\Users\\pejci\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pejci\\source\\repos\\TuristickaAgencijaAPI\\Model\\obj\\",
+      "outputPath": "C:\\Users\\pejci\\Desktop\\frpis\\TuristickaAgencijaBack\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pejci\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5660,7 +5660,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -25,7 +25,6 @@ namespace Data.Implementation.Repositories
         {
             entity.Radnik = context.Radnici.Find(entity.RadnikId);
             entity.Hotel = context.Hoteli.Find(entity.HotelId);
-            //entity.ZahtevKorisnika = context.ZahteviKorisnika.Find(entity.ZahtevKorisnikaId);
             foreach(var item in entity.StavkaRezervacijeHotela)
             {
                 item.Kategorija = context.Kategorije.Find(item.KategorijaId);
@@ -85,15 +84,7 @@ namespace Data.Implementation.Repositories
         public void Update(ZahtevZaRezervisanjeHotela entity)
         {
             List<StavkaRezervacijeHotela> list = context.StavkeRHotela.Where(p => p.ZahtevZaRezervisanjeHotela.SifraZahteva == entity.SifraZahteva).ToList();
-            //foreach(StavkaRezervacijeHotela stavka in list)
-            //{
-            //    if (!list.Contains(stavka))
-            //    {
-            //        context.StavkeRHotela.Remove(stavka);
-            //    }
-            //}
 
-            /// return listA.Any(x => listB.Contains(x));
             foreach(var item in list)
 
             {bool delete = true;
@@ -111,16 +102,11 @@ namespace Data.Implementation.Repositories
                 }
             }
             context.SaveChanges();
-            //if(list.Any(x=> entity.StavkaRezervacijeHotela.Contains(x)))
-            //{
-                
-            //}
+
             entity.Radnik = context.Radnici.Find(entity.Radnik);
             entity.Hotel = context.Hoteli.Find(entity.HotelId);
-            //entity.ZahtevKorisnika = context.ZahteviKorisnika.Find(entity.ZahtevKorisnikaId);
             foreach (var item in entity.StavkaRezervacijeHotela)
             {
-                //var stavka = context.StavkeRHotela.Find(item.StavkaRezervacijeHotelaId, entity.SifraZahteva);
                 item.Kategorija = context.Kategorije.Find(item.KategorijaId);
                 item.Korisnik = context.Korisnici.Find(item.KorisnikId);
                 item.TipSmestaja = context.TipoviSmestaja.Find(item.TipSmestajaId);
@@ -130,9 +116,6 @@ namespace Data.Implementation.Repositories
                     context.Add(item);
                     context.SaveChanges();
                 }
-                    
-                //context.StavkeRHotela.Update(item);
-                //context.SaveChanges();
 
             }
             try
@@ -144,15 +127,6 @@ namespace Data.Implementation.Repositories
             {
               
             }
-
-
-
-
-
-
-
-
-           
         }
     }
 }

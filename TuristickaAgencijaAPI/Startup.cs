@@ -1,21 +1,13 @@
+using AutoMapper;
 using Data.UnitOfWork;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
 using Newtonsoft.Json.Serialization;
-using Microsoft.AspNetCore.Server.IISIntegration;
 using Mapper = Model.Mapper;
 
 namespace TuristickaAgencijaAPI
@@ -57,13 +49,20 @@ namespace TuristickaAgencijaAPI
                         options.AllowCredentials();
                     });
             });
-          
+
             services.AddScoped<IUnitOfWork, AgencijaUnitOfWork>();
             services.AddDbContext<TuristickaOrgContext>();
-            
+
             services.AddControllersWithViews().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore)
             .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
-            services.AddAuthentication(IISDefaults.AuthenticationScheme);
+
+            services.AddAuthentication("Bearer")
+                    .AddIdentityServerAuthentication("Bearer", options =>
+                    {
+                        options.Authority = "https://localhost:5443";
+                        options.ApiName = "CoffeeAPI";
+                        options.SupportedTokens = IdentityServer4.AccessTokenValidation.SupportedTokens.Jwt;
+                    });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -82,6 +81,8 @@ namespace TuristickaAgencijaAPI
 
             app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
+            app.UseAuthentication();
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -89,5 +90,6 @@ namespace TuristickaAgencijaAPI
                 endpoints.MapControllers();
             });
         }
-    }
+
+    }   
 }

@@ -5502,11 +5502,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pejci\\source\\repos\\TuristickaAgencijaAPI\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\pejci\\Desktop\\frpis\\TuristickaAgencijaBack\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\Users\\pejci\\source\\repos\\TuristickaAgencijaAPI\\Data\\Data.csproj",
+      "projectPath": "C:\\Users\\pejci\\Desktop\\frpis\\TuristickaAgencijaBack\\Data\\Data.csproj",
       "packagesPath": "C:\\Users\\pejci\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pejci\\source\\repos\\TuristickaAgencijaAPI\\Data\\obj\\",
+      "outputPath": "C:\\Users\\pejci\\Desktop\\frpis\\TuristickaAgencijaBack\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pejci\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5523,8 +5523,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\pejci\\source\\repos\\TuristickaAgencijaAPI\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\pejci\\source\\repos\\TuristickaAgencijaAPI\\Model\\Model.csproj"
+            "C:\\Users\\pejci\\Desktop\\frpis\\TuristickaAgencijaBack\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\pejci\\Desktop\\frpis\\TuristickaAgencijaBack\\Model\\Model.csproj"
             }
           }
         }
@@ -5571,7 +5571,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

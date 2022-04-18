@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/NfThI+V7tn0P+pHWFqbw5Z0g4RXtVH0nZBBfilX6CO6cMYN2wAxI3l4W+Hy040sag5W7mb1X5W3qTrTpMP80w==",
+  "dgSpecHash": "s0nuP4j5CQZHRf2/MV9e+sOgtN24FeeqcKxUn1qgUsBJtq7ODgWKkqfwAznCR0NiUaBiIGn+4Ze4hciwxX0sTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pejci\\source\\repos\\TuristickaAgencijaAPI\\Model\\Model.csproj",
+  "projectFilePath": "C:\\Users\\pejci\\Desktop\\frpis\\TuristickaAgencijaBack\\Model\\Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pejci\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\pejci\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
